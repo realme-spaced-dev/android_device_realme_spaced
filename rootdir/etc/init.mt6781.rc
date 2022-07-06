@@ -32,6 +32,10 @@ on boot
     # start EAS+
     write /sys/devices/system/cpu/eas/enable 1
 
+    # switch to schedutil
+    write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "schedutil"
+    write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor "schedutil"
+
     # Touchpanel
     write /proc/touchpanel/oplus_tp_limit_enable 0
     write /proc/touchpanel/oplus_tp_direction 1
