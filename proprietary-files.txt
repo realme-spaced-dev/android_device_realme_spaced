@@ -37,3 +37,7 @@ system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Power - from RMX2020
 vendor/lib64/android.hardware.power-service-mediatek.so:product/vendor_overlay/30/lib64/android.hardware.power-service-mediatek.so
+
+# Camera Feature Policy - from RMX3286_11_A.58
+vendor/lib64/libmtkcam_featurepolicy.so:product/vendor_overlay/30/lib64/libmtkcam_featurepolicy.so
+
