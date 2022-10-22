@@ -16,3 +16,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/arrow_spaced.mk
+
+COMMON_LUNCH_CHOICES := \
+    arrow_spaced-user \
+    arrow_spaced-userdebug \
+    arrow_spaced-eng
