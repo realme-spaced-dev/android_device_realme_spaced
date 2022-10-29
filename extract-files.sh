@@ -37,7 +37,10 @@ source "${HELPER}"
 function blob_fixup {
     case "$1" in
         lib/libsink.so)
-            "$PATCHELF" --add-needed "libshim_vtservice.so" "$2"
+            patchelf --add-needed "libshim_vtservice.so" "$2"
+            ;;
+        product/vendor_overlay/30/android.hardware.power-service-mediatek.so)
+            patchelf --replace-needed "android.hardware.power-V1-ndk.so" "android.hardware.power-V1-ndk_platform.so" android.hardware.power-service-mediatek.so "$2"
             ;;
     esac
 }
