@@ -30,3 +30,9 @@ git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x
 mv clang/clang-r383902 linux-x86/clang-r383902
 rm -rf clang
 cd ../../..
+
+# Brightness fix
+cd frameworks/base
+wget https://raw.githubusercontent.com/sarthakroy2002/random-stuff/main/Patches/0001-brightness-curve.patch
+git am 0001*-curve.patch
+cd ../..
