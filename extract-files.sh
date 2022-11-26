@@ -40,12 +40,11 @@ function blob_fixup {
             patchelf --add-needed "libshim_vtservice.so" "$2"
             ;;
         product/vendor_overlay/30/android.hardware.power-service-mediatek.so)
-            patchelf --replace-needed "android.hardware.power-V1-ndk.so" "android.hardware.power-V1-ndk_platform.so" android.hardware.power-service-mediatek.so "$2"
+            patchelf --replace-needed "android.hardware.power-V1-ndk.so" "android.hardware.power-V1-ndk_platform.so" "$2"
             ;;
         product/vendor_overlay/30/lib64/libmtkcam_featurepolicy.so)
             # evaluateCaptureConfiguration()
-            xxd -p "${2}" | sed "s/90b0034e88740b9/90b003428028052/g" | xxd -r -p > "${2}".patched
-            mv "${2}".patched "${2}"
+            sed -i "s/\x34\xE8\x87\x40\xB9/\x34\x28\x02\x80\x52/" "$2"
             ;;
     esac
 }
