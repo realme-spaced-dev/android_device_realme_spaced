@@ -18,7 +18,7 @@
 
 set -e
 
-export DEVICE=ims-spaced
+export DEVICE=spaced-ims
 export VENDOR=realme
 
 INITIAL_COPYRIGHT_YEAR=2021

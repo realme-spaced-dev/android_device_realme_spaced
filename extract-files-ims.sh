@@ -18,7 +18,7 @@
 
 set -e
 
-export DEVICE=ims-spaced
+export DEVICE=spaced-ims
 export VENDOR=realme
 
 # Load extract_utils and do some sanity checks
