@@ -39,10 +39,7 @@ function blob_fixup {
         lib/libsink.so)
             patchelf --add-needed "libshim_vtservice.so" "$2"
             ;;
-        product/vendor_overlay/30/android.hardware.power-service-mediatek.so)
-            patchelf --replace-needed "android.hardware.power-V1-ndk.so" "android.hardware.power-V1-ndk_platform.so" "$2"
-            ;;
-        product/vendor_overlay/30/lib64/libmtkcam_featurepolicy.so)
+        product/vendor_overlay/31/lib64/libmtkcam_featurepolicy.so)
             # evaluateCaptureConfiguration()
             sed -i "s/\x34\xE8\x87\x40\xB9/\x34\x28\x02\x80\x52/" "$2"
             ;;

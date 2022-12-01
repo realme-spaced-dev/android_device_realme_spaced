@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 $(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
 
 # VNDK
-PRODUCT_EXTRA_VNDK_VERSIONS := 30
+PRODUCT_EXTRA_VNDK_VERSIONS := 31
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
@@ -140,7 +140,7 @@ PRODUCT_PACKAGES += \
 
 # Vendor overlay
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor_overlay/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor_overlay/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/31/)
 
 # Wi-Fi
 PRODUCT_PACKAGES += \

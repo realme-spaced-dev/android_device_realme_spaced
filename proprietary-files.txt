@@ -1,7 +1,4 @@
-# APNs
-etc/apns-conf.xml:product/etc/apns-conf.xml
-
-# IMS
+# IMS - from RMX3151_11_C.13
 bin/vtservice
 etc/init/init.vtservice.rc
 lib/libmtk_vt_service.so
@@ -18,17 +15,13 @@ lib64/libmtklimiter.so
 lib64/libmtkshifter.so
 lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
-
-# IMS - from RMX3151_11_C.13
 lib/libmtkperf_client.so
 lib64/libmtkperf_client.so
 lib/libmtkavenhancements.so
 lib64/libmtkavenhancements.so
-
-# Perf-ctl - from RMX3151_11_C.13
 lib64/libperfctl.so
 
-# IMS | From bomb RP1A.200720.011 release-keys
+# IMS - from bomb RP1A.200720.011 release-keys
 lib/libcomutils.so|be7c7b0901119cb260186061b90ef5b6a8292ae2
 lib/libimsma.so|c9e524600acb37296d7c73aa9db56d21e1a88d5b
 lib/libimsma_adapt.so|25159303e5d6404f08bda6456c8fcc2150005a9b
@@ -40,9 +33,6 @@ lib/libsource.so|0e01c6c5d76e21629463d1f94d28d1b8f91c4c30
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
-# Power - from RMX2020
-vendor/lib64/android.hardware.power-service-mediatek.so:product/vendor_overlay/30/lib64/android.hardware.power-service-mediatek.so
-
-# Camera Feature Policy - from RMX3286_11_A.58
+# Camera Feature Policy - from RMX3151_11_C.13
 vendor/lib64/libmtkcam_featurepolicy.so:product/vendor_overlay/30/lib64/libmtkcam_featurepolicy.so
 

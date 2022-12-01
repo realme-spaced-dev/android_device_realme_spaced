@@ -1,4 +1,4 @@
-# IMS
+# IMS - from RMX3151_11_C.13
 -framework/mediatek-common.jar
 -framework/mediatek-framework.jar
 -framework/mediatek-ims-base.jar
@@ -9,8 +9,3 @@
 -priv-app/ImsService/ImsService.apk
 framework/mediatek-ims-extension-plugin.jar
 framework/mediatek-ims-legacy.jar
-
-# EngineerMode
--priv-app/EngineerMode/EngineerMode.apk
-lib/libem_support_jni.so
-lib64/libem_support_jni.so
